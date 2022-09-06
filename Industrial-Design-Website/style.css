@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body, html {
+    height: 100%;
+}
+
+body{
+    /* The image used */
+    background-image: url("https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?w=740&t=st=1658736372~exp=1658736972~hmac=311c3078c75c077f05413965e0086087aa07936d8a53d305cd8db53f76a2d4f4");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Nav Bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    font-weight: bolder;
+}
+
+nav .list ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+nav .list ul li{
+    padding: 10px 20px;
+    font-size: 1em;
+    padding-top: 5%;
+}
+
+nav .logo img{
+    width: 130px;
+}
+
+.logo img:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+}
+
+nav .list{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #fff;
+}
+
+
+.list .contact{
+    display: flex;
+    padding-top: 3%;
+}
+
+.contact div h2{
+    font-size: 1em;
+}
+
+.contact div h3{
+    font-size: .9em;
+}
+/* Main Section */
+
+.main .content{
+    color: #fff;
+    font-size: 55px;
+    width: 800px;
+    margin: 10% 0% 0 10%;
+}
+
+.main .content button{
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 25px;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+.main .content button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* Pop Up */
+.main .popup1, .popup2{
+    position: absolute;
+    top: 30%;
+    right:9%;
+    color: #fff;
+    width: 200px;
+    background: rgb(48,69,86);
+    padding: 20px;
+}
+
+.popup2{
+    top: 70%;
+    right: 28%;
+} 
+
+.main .popup1 .Image img{
+    padding: 2px 10px;
+}
+
+.Image{
+    background-color: #fff;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 8%;
+}
+
+/* Pointers */
+
+.lines{
+    position: absolute;
+    top: 44.3%;
+    right: 15%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.line{
+    width: 2px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.circle{
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.lines1{
+    position: absolute;
+    top: 78.5%;
+    right: 22.8%;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.line1{
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.circle1{
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+}
+
+@media screen and (max-width:1450px) {
+         nav .logo img{
+            width: 110px;
+        }
+        .main .content{
+            font-size: 45px;
+            width: 700px;
+                  }
+
+        .main .content button{
+            padding: 10px 30px;
+            font-size: 20px;
+        }
+}
+
+@media screen and (max-width:1280px) {
+   .main .content{
+       font-size: 40px;
+       width: 600px;
+             }
+             .lines{
+                position: absolute;
+                 right: 18%;
+             }
+                   
+
+}
+
+@media screen and (max-width:1170px) {
+   .main .content{
+    margin-top: 15%;
+       font-size: 38px;
+       width: 600px;
+             }
+}
+
+@media screen and (max-width:1080px) {
+    nav .logo img{
+       width: 100px;
+   }
+   .main .content{
+    margin-top: 18%;
+       font-size: 35px;
+       width: 500px;
+             }
+
+             .lines1{
+                top: 78%;
+                right: 21.8%  
+            }
+
+            .lines{
+                top: 43%;
+                right: 21%  
+            }
+
+           .popup1, .popup2 article{
+                font-size:12px;
+                }
+
+                .main .popup1, .popup2{
+                    position: absolute;
+                    top: 30%;
+                    right:9%;
+                    width: 180px;
+                    padding: 20px;
+                }
+       
+                .popup2{
+                    top: 70%;
+                    right: 28%;
+                    width: 150px;
+                }
+                
+            .Image{
+                width: 70px;
+                border-radius: 30px;
+                margin-bottom: 4%;
+            }
+
+
+@media screen and (max-width:1000px) {
+    nav .logo img{
+       width: 100px;
+   }
+   .main .content{
+    margin-top: 18%;
+       font-size: 30px;
+       width: 500px;
+             }
+             .main .content button{
+                padding: 10px 30px;
+                font-size: 15px;
+            }
+             .lines1{
+                top: 78%;
+                right: 21%  
+            }
+
+            .lines{
+                top: 43%;
+                right: 19%  
+            }
+
+           .popup1, .popup2 article{
+                font-size:12px;
+                }
+            
+                .main .popup1, .popup2{
+                    position: absolute;
+                    top: 30%;
+                    right:9%;
+                    width: 150px;
+                    padding: 20px;
+                }
+       
+                .popup2{
+                    top: 70%;
+                    right: 28%;
+                    width: 150px;
+                }
+        
+        }
+
+@media screen and (max-width:900px) {
+ nav .list ul li{
+padding: 10px 10px;
+font-size: 13px;
+padding-top: 5%;
+}
+            
+nav .logo img{
+width: 80px;
+}
+          
+.main .content{
+margin-top: 20%;
+font-size: 25px;
+width: 400px;
+            }
+            
+.main .content button{
+padding: 10px 30px;
+font-size: 15px;
+            }
+.lines1{
+    top: 78%;
+right: 21%  
+        }
+        
+.lines{
+     top: 42%;
+right: 21%  
+    }
+
+}
+
+
+@media screen and (max-width:830px) {
+    nav .list ul li{
+            font-size: 12px;
+                 
+                }     
+nav .logo img{
+    width: 70px}
+            
+nav .list{
+                     
+    padding-bottom: 1%;
+    border-bottom: 2px solid #fff;
+    }
+      
+    .main .content{
+        margin-top: 15%;
+        font-size: 25px;
+        width: 350px;
+                    }
+
+    .main .content button{
+    margin-top: 10%;
+     padding: 10px 20px;
+    font-size: 15px;
+    }
+    .lines1{
+    top: 78%;
+    right: 17%  
+    }
+                
+.lines{
+    top: 41%;
+     right: 19%  
+    }
+                
+.Image{
+     width: 60px;
+     border-radius: 30px;
+    margin-bottom: 4%;
+}
+.main .popup1, .popup2{
+    position: absolute;
+    top: 25%;
+    right:9%;
+    width: 120px;
+    padding: 20px;
+}
+
+/* .popup1{
+    top: 100%;
+} */
+
+.popup2{
+    top: 70%;
+    right: 28%;
+    width: 120px;
+}
+
+}
+   
+@media screen and (max-width:730px) {
+    nav .list ul li{
+         font-size: 12px;
+        }   
+
+nav .logo img{
+    width: 70px}
+            
+nav .list{                 
+    padding-bottom: 1%;
+    border-bottom: 2px solid #fff;
+    }
+
+    .contact div img{
+        width: 70%;
+    }
+    
+    .contact div h2{
+        font-size: 12px;
+        margin-right: 5%;
+    }
+
+    .contact div h3{
+        font-size: 10px;
+        margin-right: 5%;
+    }
+
+    .main .content{
+        margin-top: 15%;
+        font-size: 20px;
+        width: 300px;
+                    }
+
+    .main .content button{
+    margin-top: 10%;
+     padding: 10px 20px;
+    font-size: 15px;
+    }
+    .lines1{
+    top: 78%;
+    right: 19%  
+    }
+                
+.lines{
+    top: 39%;
+     right: 20%  
+    }
+                
+.Image{
+     width: 60px;
+     border-radius: 30px;
+    margin-bottom: 4%;
+}
+.main .popup1, .popup2{
+    position: absolute;
+    top: 25%;
+    right:9%;
+    width: 120px;
+    padding: 20px;
+}
+
+.popup2{
+    top: 70%;
+    right: 28%;
+    width: 120px;
+}
+
+}
+
+@media screen and (max-width:630px) {
+
+    nav .list ul li{
+        font-size: 10px;
+       }   
+         
+nav .logo img{
+   width: 60px
+}
+           
+    .main .content{
+        margin-top: 15%;
+        font-size: 15px;
+        width: 250px;
+                    } 
+
+                    .main .content button{
+                        padding: 6px 20px;
+                        font-size: 12px;
+                        margin-top: 8%;
+                       }                   
+
+                    .main .popup1, .popup2{
+                        position: absolute;
+                        top: 25%;
+                        right:9%;
+                        width: 100px;
+                        padding: 10px;
+                    }
+                    
+                    .popup2{
+                        top: 70%;
+                        right: 28%;
+                        width: 100px;
+                    }
+
+                    .lines1{
+                        top: 78%;
+                        right: 18%  
+                        }
+                                    
+                    .lines{
+                        top: 37%;
+                         right: 21%  
+                        }
+
+}
+
+@media screen and (max-width:550px) {
+
+    nav .list ul {
+        margin-left: 5%;
+       }
+
+    nav .list ul li{
+        font-size: 8px;
+       }   
+         
+nav .logo img{
+   width: 50px
+}
+
+.contact{
+    margin-right: 5%;
+}
+
+.contact div img{
+    width: 70%;
+}
+
+.contact div h2{
+    font-size: 12px;
+    margin-right: 15%;
+}
+
+.contact div h3{
+    font-size: 10px;
+    margin-right: 15%;
+}
+
+.main .content{
+    margin-top: 25%;
+    font-size: 15px;
+    width: 250px;
+} 
+
+.main .content button{
+    padding: 6px 20px;
+    font-size: 10px;
+    margin-top: 8%;
+   }
+
+
+}
